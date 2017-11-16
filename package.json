@@ -8,7 +8,7 @@
     "gulp:images": "gulp images",
     "jekyll:serve": "bundle exec jekyll serve",
     "jekyll:build": "bundle exec jekyll build",
-    "build": "npm-run-all --sequential gulp:js gulp:sass gulp:fonts gulp:images gulp:sass gulp:svg jekyll:build"
+    "build": "npm-run-all --sequential gulp:js gulp:images gulp:sass gulp:svg jekyll:build"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
