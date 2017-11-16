@@ -1,0 +1,8 @@
+.card-columns {
+  @include media-breakpoint-up(sm) {
+    column-count: 2;
+  }
+  @include media-breakpoint-up(md) {
+    column-count: 3;
+  }
+}

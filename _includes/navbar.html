@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary rounded-top">
+  <div class="collapse navbar-collapse show" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item px-2 dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/">Services</a>
+        <div class="dropdown-menu">
+          {% for service in site.data.services_links %}
+            <a class="dropdown-item {% if service.title == page.title %} active {% endif %}" href="{{ site.url }}{{ service.href }}">
+              <strong>{{ service.title }}</strong>
+              <br />
+              {{ service.caption }}
+            </a>
+          {% endfor %}
+        </div>
+      </li>
+
+      {% for nav in site.data.nav_links %}
+        {% if nav.subpages != null %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ site.url }}">{{ nav.title }}</a>
+            <div class="dropdown-menu">
+            {% for subpage in nav.subpages %}
+              <a class="dropdown-item" href="{{ site.url }}{{ subpage.href }}">
+                <strong>{{ subpage.title }}</strong>
+                <br />
+                {{ subpage.caption }}
+              </a>
+            {% endfor %}
+            </div>
+            
+          </li>
+        {% else %} 
+          <li class="nav-item px-2 {% if nav.title == page.title %} active {% endif %}">
+            <a class="nav-link" href="{{ site.url }}{{ nav.href }}">{{ nav.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <ul class="navbar-nav bg-danger ml-auto">
+      <li class="nav-item">
+        <a class="nav-link px-4 font-weight-bold" href="/contact">Request service</a>
+      </li>
+    </ul>
+  </div>
+</nav>

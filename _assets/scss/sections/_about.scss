@@ -1,0 +1,8 @@
+.mc-family-wrapper {
+  @include gradient-y($white, $gray-lighter);
+  border-bottom: $border-width solid theme-color("secondary");
+
+  .social-media-icon {
+    box-shadow: 0 5px 8px -3px rgba(0,0,0,.25);
+  }
+}

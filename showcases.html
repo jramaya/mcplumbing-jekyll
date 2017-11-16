@@ -1,0 +1,19 @@
+---
+layout: basic
+title: Showcases
+description: Selected projects and galleries
+---
+
+{% for showcase in site.data.showcases %}
+  <div class="media align-items-center justify-content-center">
+    <a class="mr-3 mb-3" href="{{ site.url }}/showcases/{{ showcase.permalink }}">
+      <img class="d-flex align-self-center img-thumbnail" src="{{ site.url }}{{ showcase.thumbnail }}" height="100" width="100" alt="{{ showcase.title }}" />
+    </a>
+    <div class="media-body">
+      <h5 class="mt-0 mb-0">
+        <a href="{{ site.url }}/showcases/{{ showcase.permalink }}">{{ showcase.title }}</a>
+      </h5>
+      <p class="mb-3">{{ showcase.caption }}</p>
+    </div>
+  </div>
+{% endfor %}

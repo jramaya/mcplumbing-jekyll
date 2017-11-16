@@ -1,0 +1,11 @@
+.footer-link {
+  color: $navbar-dark-active-color;
+
+  @include hover-focus {
+    color: $navbar-dark-active-color;
+  }
+}
+
+.footer {
+  @include gradient-y(transparent, rgba(0,0,0,.2));
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body id="coupon">
+
+    {% assign coupon = page.coupon %}
+
+    <div class="container">
+      {% include header.html %}
+      {% include navbar.html %}
+
+      <div class="content py-3">
+        <div class="container">
+          <div class="page-header mb-3">
+            <h4>Redeem Coupon</h4>
+            <p class="lead mb-1">
+              Show this coupon to your Mike Counsil technician to redeem!
+            </p>
+          </div>
+          <div class="row justify-content-sm-center">
+            <div class="col-12 col-lg-6">
+              <div class="card card-{{ coupon.style }} border-style-dashed mb-3">
+                <img src="{{ site.url }}{{ coupon.image }}" class="card-img-top img-fluid" />
+                <div class="card-body">
+                  <h4 class="card-title">{{ coupon.title }}</h4>
+                  {{ coupon.content | markdownify }}
+
+                  <p class="text-muted">
+                    <small>
+                      <strong>Fine print:</strong>
+                      <br />
+                      {{ coupon.fine_print }}
+                    </small>
+                  </p>
+
+                  <p class="text-muted mb-0">
+                    <small>
+                      <strong>Expires:</strong>
+                      <br />
+                      {{ coupon.expiration_date }}
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% include footer.html %}
+    </div>
+    {% include javascripts.html %}
+  </body>
+</html>
+

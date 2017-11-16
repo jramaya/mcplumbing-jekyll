@@ -1,0 +1,46 @@
+<div class="card border-danger mb-3">
+  <div class="card-body display-4 mb-0 text-danger text-center">
+    <div class="open-sans-condensed now-hiring">
+      Now
+      <br />
+      Hiring!
+    </div>
+  </div>
+  <div class="card-body">
+    <a href="http://www.careersmcplumbing.com/" class="btn btn-lg btn-block btn-danger">Click here</a>
+  </div>
+</div>
+<div class="card text-white bg-secondary border-secondary mb-3">
+  <div class="card-body text-center">
+    <i class="fa fa-cut fa-3x"></i>
+    <i class="fa fa-tags fa-3x"></i>
+    <i class="fa fa-envelope fa-3x"></i>
+    <h5>Newsletter</h5>
+    <p>Signup for exclusive coupons and Newsletter</p>
+    <form>
+      <input type="email" class="form-control" placeholder="Enter email">
+    </form>
+  </div>
+</div>
+<div class="card text-white bg-primary border-primary mb-3">
+  {% for video in site.data.videos %}
+    {% if video.sidebar %}
+      <a href="/videos/{{ video.permalink }}">
+        <img class="card-img-top" src="https://img.youtube.com/vi/{{ video.youtube }}/0.jpg" width="200" alt="{{ video.title }}" />
+      </a>
+      <div class="card-body">
+        <p class="mb-0 font-weight-bold">
+          <a href="/videos/{{ video.permalink }}">{{ video.title }}</a>
+        </p>
+        {% if video.caption != null %}
+          <p class="mb-0">{{ video.caption }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+<div class="card">
+  <div class="card-body text-center">
+    {% include address.html %}
+  </div>
+</div>

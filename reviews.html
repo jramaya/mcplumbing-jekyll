@@ -1,0 +1,20 @@
+---
+layout: basic
+title: Reviews
+description: Reviews by our customers
+subtitle: |
+  People love us on <a href="#/">Yelp</a> and <a href="#/">ReviewBuzz</a>!
+---
+
+{% for review in site.data.reviews %}
+  <div class="media mb-3">
+    <div class="text-center mr-3">
+      <img src="{{ site.url }}{{ review.image }}" height="75" class="rounded mx-auto d-block" />
+      <small>{{ review.author }}</small>
+    </div>
+    <div class="media-body">
+      <h5 class="mt-0">{{ review.title }}</h5>
+      <em>{{ review.content | markdownify }}</em>
+    </div>
+  </div>
+{% endfor %}

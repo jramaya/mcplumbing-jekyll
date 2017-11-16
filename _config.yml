@@ -1,0 +1,50 @@
+exclude: [Gemfile, Gemfile.lock, .babelrc, gulpfile.babel.js, package.json, package-lock.json, postcss.config.js, yarn.lock, node_modules, docs]
+
+# Dependencies
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  auto_ids: true
+
+# Permalinks
+permalink: pretty
+
+# Gems
+gems:
+  - jekyll-tidy
+  - jekyll-seo-tag
+
+# Site
+title: Mike Counsil Plumbing & Rooter
+description: |
+  Mike Counsil Plumbing is dedicated to offering our clients the highest quality
+  of plumbing in the industry today. Plumbers are available twenty four hours a
+  day, seven days a week to service our clients in need of a plumber to work at
+  their home or business. Mike Counsil Plumbing sevices Santa Clara County, San
+  Mateo County, and Alameda County, including cities such as San Jose,
+  Cupertino, Sunnyvale, Los Altos, Mountain View, Los Gatos, and Saratoga.
+authors: Cody Lopez, Mark Otto, Jacob Thornton, Yan Zhu and Bootstrap contributors
+keywords: Plumber San Jose, Plumber Los Altos, Plumber Sunnyvale, Plumber Los Gatos, Plumbing, Drain Cleaning, General Plumbing, Emergency Plumbing, Emergency Plumber, Water Filtration, Water Softener, Water Heaters, Leak, Plumbing Services, Local PLumber
+
+# SEO
+webmaster_verifications:
+  google: nozXUzPx0cl4kSM5lmfisR8XFtU_VXYu-F3QSZDw7CI
+
+# Custom
+current_version: 0.0.1
+repo: https://**
+slack: https://**
+
+download:
+  source: https://**
+  dist: https://**
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/default-card.png
+        height: 495
+        width: 945

@@ -1,0 +1,28 @@
+.spotlight-card-group {
+  border-bottom: $border-width solid $border-color;
+
+  .card {
+    border-bottom: none;
+    border-top: none;
+    border-radius: 0;
+  }
+}
+
+.duo-card-group {
+  border-bottom: $border-width solid $border-color;
+
+  .card {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .card:nth-child(1) {
+    border-right: $border-width * .5 solid $border-color;
+    @include gradient-directional($white, rgba($white, 0), -70deg);
+  }
+  .card:nth-child(2) {
+    border-left: $border-width * .5 solid $border-color;
+    @include gradient-directional($white, rgba($white, 0), 70deg);
+  }
+}

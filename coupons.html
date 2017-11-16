@@ -1,0 +1,20 @@
+---
+layout: basic
+title: Coupons
+description: Coupons for popular plumbing and rooter services
+---
+
+<div class="card-columns">
+  {% for coupon in site.data.coupons %}
+    <div class="card card-{{ coupon.style }} border-style-dashed mb-3">
+      <a href="/coupons/{{ coupon.permalink }}">
+        <img src="{{ site.url }}{{ coupon.image }}" class="card-img-top img-fluid" />
+      </a>
+      <div class="card-body">
+        <h4 class="card-title">{{ coupon.title }}</h4>
+        <p class="card-text">{{ coupon.caption }}</p>
+        <a href="/coupons/{{ coupon.permalink }}" class="btn btn-outline-primary btn-block">Redeem coupon</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>

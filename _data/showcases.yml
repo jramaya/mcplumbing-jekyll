@@ -1,0 +1,80 @@
+- title: Aaron
+  permalink: aaron
+  caption: A collection of projects by our technican Aaron.
+  content: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at, unde
+    fugit. Perspiciatis cupiditate quam deleniti veritatis, laudantium commodi,
+    voluptatum. Esse excepturi inventore ut exercitationem odit, aspernatur
+    culpa quis vitae.
+  thumbnail: /assets/images/showcases/aaron/thumbnail.jpg
+  images:
+    - src: /assets/images/showcases/aaron/aaron_1.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_1.jpg
+      title: Barfoo
+      caption: Foobar
+    - src: /assets/images/showcases/aaron/aaron_2.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_2.jpg
+      title: Barfoo
+      caption: Foobar
+    - src: /assets/images/showcases/aaron/aaron_3.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_3.jpg
+      title: sadsa
+      caption: sdfds
+    - src: /assets/images/showcases/aaron/aaron_4.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_4.jpg
+      title: Barfoo
+      caption: Foobar
+
+- title: Shane
+  permalink: shane
+  caption: Lead project manager in action.
+  content: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at, unde
+    fugit. Perspiciatis cupiditate quam deleniti veritatis, laudantium commodi,
+    voluptatum. Esse excepturi inventore ut exercitationem odit, aspernatur
+    culpa quis vitae.
+  thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_2.jpg
+  images:
+    - src: /assets/images/showcases/aaron/aaron_1.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_1.jpg
+      title: Barfoo
+      caption: Foobar
+    - src: /assets/images/showcases/aaron/aaron_2.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_2.jpg
+      title: Barfoo
+      caption: Foobar
+    - src: /assets/images/showcases/aaron/aaron_3.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_3.jpg
+      title: sadsa
+      caption: sdfds
+    - src: /assets/images/showcases/aaron/aaron_4.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_4.jpg
+      title: Barfoo
+      caption: Foobar
+
+- title: Mike
+  permalink: mike
+  caption: The head cheese.
+  content: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at, unde
+    fugit. Perspiciatis cupiditate quam deleniti veritatis, laudantium commodi,
+    voluptatum. Esse excepturi inventore ut exercitationem odit, aspernatur
+    culpa quis vitae.
+  thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_3.jpg
+  images:
+    - src: /assets/images/showcases/aaron/aaron_1.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_1.jpg
+      title: Barfoo
+      caption: Foobar
+    - src: /assets/images/showcases/aaron/aaron_2.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_2.jpg
+      title: Barfoo
+      caption: Foobar
+    - src: /assets/images/showcases/aaron/aaron_3.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_3.jpg
+      title: sadsa
+      caption: sdfds
+    - src: /assets/images/showcases/aaron/aaron_4.jpg
+      thumbnail: /assets/images/showcases/aaron/thumbnail_aaron_4.jpg
+      title: Barfoo
+      caption: Foobar

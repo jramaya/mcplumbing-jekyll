@@ -1,0 +1,15 @@
+{% for video in site.data.videos %}
+  <div class="media">
+    <a class="mr-3 mb-3" href="/videos/{{ video.permalink }}">
+      <img class="img-thumbnail d-flex align-self-start" src="https://img.youtube.com/vi/{{ video.youtube }}/0.jpg" width="200" alt="{{ video.title }}" />
+    </a>
+    <div class="media-body">
+      <h5 class="mt-0">
+        <a href="/videos/{{ video.permalink }}">{{ video.title }}</a>
+      </h5>
+      {% if video.caption != null %}
+        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}

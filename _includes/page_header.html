@@ -1,0 +1,6 @@
+<div class="page-header mb-3">
+  <h4{% if page.description %} class="mb-0"{% endif %}>{{ page.title }}</h4>
+  {% if page.description != null %}
+    <p class="lead mb-1">{{ page.description }}</p>
+  {% endif %}
+</div>

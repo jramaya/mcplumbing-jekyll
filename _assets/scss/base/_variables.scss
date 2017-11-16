@@ -1,0 +1,140 @@
+// Colors
+$mc-green: #70c522;
+$mc-brown: #665e4d;
+$mc-tan: #ccbea3;
+$mc-blue: #1d76bb;
+$mc-red: #9d261d;
+
+// Grayscale: ;
+$gray-base:              lighten(#070d07, 2%);
+$gray-darkest:           lighten($gray-base, 5%);
+$gray-darker:            lighten($gray-base, 15%);
+$gray-dark:              lighten($gray-base, 30%);
+$gray:                   lighten($gray-base, 45%);
+$gray-light:             lighten($gray-base, 55%);
+$gray-lighter:           lighten($gray-base, 70%);
+$gray-lightest:          lighten($gray-base, 85%);
+
+// Borders
+$border-color:           lighten($gray-base, 50%);
+$border-radius:          4px;
+$border-width:           2px;
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $mc-green;
+$brand-success:             $mc-green;
+$brand-info:                $teal;
+$brand-warning:             $orange;
+$brand-danger:              $mc-red;
+$brand-inverse:             $gray-dark;
+
+$theme-colors: (
+  primary: $mc-green,
+  secondary: $mc-blue,
+  success: $mc-green,
+  info: $teal,
+  warning: $orange,
+  danger: $mc-red,
+  light: $gray-100,
+  dark: $gray-800
+);
+
+
+// Body
+$content-bg:            lighten($gray-base, 75%);
+$body-bg:               $mc-green;
+$body-color:            lighten($gray-base, 15%);
+$inverse-bg:    $gray-dark;
+$inverse-color: $gray-lighter;
+
+// Headings
+$headings-font-weight:        700;
+
+$font-family-open-sans: 'Open Sans', sans-serif;
+$font-family-base: $font-family-open-sans;
+
+
+// Links
+$link-color:            theme-color("secondary");
+$link-decoration:       none;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+// Component
+$component-active-color: theme-color("secondary");
+$component-active-bg:    $white; 
+
+// Buttons
+$btn-font-weight: bold;
+$input-btn-border-width: $border-width;
+
+// Thumbnails
+$thumbnail-border-width: $border-width;
+$thumbnail-border-color: $border-color;
+
+// List
+$list-group-active-border-color: $border-color;
+
+// Dropdowns
+$dropdown-min-width:             10rem;
+$dropdown-padding-y:             .5rem;
+$dropdown-margin-top:            .125rem;
+$dropdown-bg:                    theme-color("secondary");
+$dropdown-border-color:          darken(theme-color("secondary"), 15%);
+$dropdown-border-width:          $border-width;
+$dropdown-divider-bg:            darken(theme-color("secondary"), 15%);
+$dropdown-box-shadow:            0 .5rem 1rem rgba($black,.175);
+
+$dropdown-link-color:            $white;
+$dropdown-link-hover-color:      theme-color("secondary");
+$dropdown-link-hover-bg:         $white;
+
+$dropdown-link-active-color:     $component-active-color;
+$dropdown-link-active-bg:        $component-active-bg;
+
+$dropdown-link-disabled-color:   $gray-light;
+
+$dropdown-item-padding-x:        1.5rem;
+
+$dropdown-header-color:          $gray-light;
+
+// Navbar
+$navbar-padding-y:                  0;
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           $white;
+
+// Text
+$text-muted: $gray;
+
+// List-group
+
+$list-group-border-color:           $dropdown-border-color;
+$list-group-border-width:           $border-width;
+
+
+$list-group-bg: $dropdown-bg;
+$list-group-hover-bg:            $dropdown-link-hover-bg;
+$list-group-active-border-color: $list-group-border-color;
+$list-group-active-color:        $component-active-color;
+$list-group-active-bg:           $component-active-bg;
+
+$list-group-action-color:           $dropdown-link-color;
+$list-group-action-hover-color:     $dropdown-link-hover-color;
+
+$list-group-action-active-color:    $component-active-color;
+$list-group-action-active-bg:       $component-active-bg;
+
+// Cards
+$card-border-color:        $border-color;
+$card-border-width:        2px;
+
+
+// Modals
+$modal-content-border-color:     $border-color;
+$modal-content-border-width:     $border-width;
+
+$modal-backdrop-bg:           mix($black, $mc-green, 90%);
+$modal-header-border-color:   $border-color;
+$modal-footer-border-color:   $modal-header-border-color;
+$modal-header-border-width:   $modal-content-border-width;
+$modal-footer-border-width:   $modal-header-border-width;

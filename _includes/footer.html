@@ -1,0 +1,31 @@
+<footer class="footer bg-secondary text-white py-3 mb-5 rounded-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3">
+        <h5>Services</h5>
+        <ul class="list-unstyled">
+          {% for link in site.data.services_links %}
+            <li><a href="{{ site.url }}{{ link.href }}" class="footer-link">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-md-5">
+        <h5>Helpful links</h5>
+        <ul class="list-unstyled">
+          {% for link in site.data.helpful_links %}
+            <li><a href="{{ site.url }}{{ link.href }}" class="footer-link">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 text-center">
+        <img src="{{ site.url }}/assets/images/logo_new_footer.png" class="img-fluid" />
+        <p>
+          Copyright © 2017 Mike Counsil Plumbing
+        </p>
+        <a href="/contact" class="btn btn-secondary">Contact</a>
+        <a href="http://www.careersmcplumbing.com/" class="btn btn-secondary">Join our team</a>
+      </div>
+    </div>
+  </div>
+</footer>

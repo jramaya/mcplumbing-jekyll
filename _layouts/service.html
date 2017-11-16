@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body id="service">
+    <div class="container">
+      {% include header.html %}
+      {% include navbar.html %}
+
+      <div class="content py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              {% include page_header.html %}
+              {{ content }}
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="list-group">
+                <div class="list-group-item text-white text-center">
+                  <h4 class="mb-0">Services</h4>
+                </div>
+                {% for service in site.data.services_links %}
+                  <a href="{{ site.url }}{{ service.href }}" class="list-group-item list-group-item-action {% if service.title == page.title %} active {% endif %} d-inline-block">
+                    <strong>{{ service.title  }}</strong>
+                    <br />
+                    <span>
+                      {{ service.caption }}
+                    </span>
+                  </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {% include footer.html %}
+    </div>
+    {% include javascripts.html %}
+  </body>
+</html>

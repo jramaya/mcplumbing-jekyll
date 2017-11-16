@@ -1,0 +1,21 @@
+---
+layout: basic
+title: Articles
+description: News, lifestyle and plumbing
+---
+
+{% for article in site.data.articles %}
+  <div class="media">
+    <a class="mr-3 mb-3" href="/articles/{{ article.permalink }}">
+      <img class="img-thumbnail d-flex align-self-start" src="{{ article.thumbnail }}" width="200" alt="{{ article.title }}" />
+    </a>
+    <div class="media-body">
+      <h5 class="mt-0">
+        <a href="/articles/{{ article.permalink }}">{{ article.title }}</a>
+      </h5>
+      {% if article.caption != null %}
+        <p>{{ article.caption }}</p>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}

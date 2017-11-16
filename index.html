@@ -1,0 +1,100 @@
+---
+layout: home
+---
+
+<div class="mc-family-wrapper">
+  <div class="container">
+    <div class="row no-gutters align-items-center flex-sm-row-reverse">
+      <div class="col-12 col-lg-7">
+        <h3 class="mt-md-3">
+          <a href="/legal/satisfaction-guarantee/">100% Satisfaction Guarantee</a>
+        </h3>
+        <h3>
+          <a href="/legal/ygrene-financing/">100% Financing Available*</a>
+        </h3>
+        <p class="lead">
+          Mike Counsil Plumbing has been family owned and operated from the
+          start. Our customers are our neighbors, and we are proud to be part of
+          the community. We offer the highest quality of plumbing, and
+          friendliest customer service in the industry. When you want it done
+          right, call Mike Counsil Plumbing and Rooter.
+        </p>
+        <p class="lead text-center font-weight-bold">
+          "We'll Be There For You!"
+        </p>
+        <div class="text-center mb-md-3">
+          {% for icon in site.data.social_media_icons %}
+            <a href="{{ icon.href }}" class="m-1">
+              <img src="{{ icon.src }}" alt="{{ icon.name }}" class="social-media-icon rounded" width="50" height="50" />
+            </a> 
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 align-self-end text-center">
+        <img src="{{ site.url }}/assets/images/the_counsils.png" alt="The Counsil's" class="img-fluid pt-lg-3 pr-lg-5" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-9">
+
+        <div id="homeCarousel" class="carousel slide mb-3" data-ride="carousel">
+          <ol class="carousel-indicators">
+            {% for carousel in site.data.home_carousels %}
+              <li data-target="#homeCarousel" data-slide-to="{{ forloop.index0 }}" class="active"></li>
+            {% endfor %}
+          </ol>
+          <div class="carousel-inner rounded">
+            {% for carousel in site.data.home_carousels %}
+              <div class="carousel-item{% if forloop.index0 == 0 %} active {% endif %}">
+                <img class="d-block w-100 rounded" src="{{ site.url }}{{ carousel.src }}" alt="{{ carousel.caption }}">
+                <div class="carousel-caption d-none d-md-block">
+                  {% if carousel.title != null %}
+                    <h4>{{ carousel.title }}</h4>
+                  {% endif %}
+                  {% if carousel.caption != null %}
+                    {{ carousel.caption | markdownify }}
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="card-columns">
+          {% for coupon in site.data.coupons %}
+            {% if coupon.home == true %}
+            <div class="card card-{{ coupon.style }} border-style-dashed mb-3">
+              <a href="/coupons/{{ coupon.permalink }}">
+                <img src="{{ site.url }}{{ coupon.image }}" class="card-img-top img-fluid" />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">{{ coupon.title }}</h5>
+                <p class="card-text">{{ coupon.caption }}</p>
+                <a href="/coupons/{{ coupon.permalink }}" class="btn btn-outline-primary btn-block">Redeem coupon</a>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="p-5 text-center">
+          <a href="/coupons" class="btn btn-secondary">More coupons</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        {% include sidebar.html %}
+      </div>
+    </div>
+  </div>
+</div>

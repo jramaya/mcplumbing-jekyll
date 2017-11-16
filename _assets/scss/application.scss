@@ -1,0 +1,23 @@
+// Bootstrap and overrides
+@import 'custom';
+
+@import 'font-awesome/font-awesome';
+
+// Base/core
+@import 'base/layout';
+@import 'base/utilities';
+
+// Sections
+@import 'sections/about';
+@import 'sections/coupons';
+@import 'sections/footer';
+@import 'sections/header';
+@import 'sections/page-header';
+@import 'sections/sidebar';
+@import 'sections/spotlight';
+
+// Components
+@import 'components/carousel';
+@import 'components/images';
+@import 'components/navbar';
+@import 'components/slick';
